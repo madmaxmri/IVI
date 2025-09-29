@@ -28,3 +28,7 @@ git clone https://github.com/madmaxmri/IVI.git
 
 ```
 Open Qt-Creator IDE-> Open project -> IVI -> Cmakelist.txt -> Open 
+
+📝 Author
+
+Mriduparna Bania
