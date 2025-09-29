@@ -25,3 +25,5 @@ Clone the repository:
 ```
 bash
 git clone https://github.com/madmaxmri/IVI.git
+
+Open Qt-Creator IDE-> Open project -> IVI -> Cmakelist.txt -> Open 
