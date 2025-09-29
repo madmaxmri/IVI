@@ -1,8 +1,7 @@
 ## IVI - Invehicle infotainment
   This project implements the frontend part of an Invehicle Infotainment system using Qt-creator IDE with QML and C++. 
 
-## ScreenShots of all the Screens
----
+## 1. ScreenShots of all the Screens
   
 <img width="1366" height="767" alt="home" src="https://github.com/user-attachments/assets/ecaf2c91-ccc6-4398-b2bc-24a158ed4ec8" />
 <img width="1366" height="765" alt="vehicle" src="https://github.com/user-attachments/assets/4f59e5ff-1273-400f-a79e-d5ac54384770" />
