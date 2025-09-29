@@ -268,6 +268,7 @@ qt_add_qml_module(appHMI
         QML_FILES AdasComponents/DriveTerrainSystem.qml
         RESOURCES assets/icons/break.png assets/icons/change.png assets/icons/four-wheel-drive-on-mountain.png assets/icons/mirror.png
         RESOURCES assets/icons/speedometer.png
+        RESOURCES assets/icons/blindSpotbk.png assets/icons/Cruise_control.png assets/icons/emergency_break.png
 
 )
 

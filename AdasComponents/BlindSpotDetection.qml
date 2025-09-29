@@ -1,22 +1,21 @@
 import QtQuick 2.15
-import QtQuick.Controls.Basic
-import QtQuick.Layouts
+import QtQuick.Controls.Basic 2.15
+import QtQuick.Layouts 1.15
 import "../Buttons"
 import "../SettingsComponent"
-
 
 MainPage {
     id: root
     anchors.fill: parent
+
     ColumnLayout {
-        width: parent
+        width: parent.width
         spacing: 20
 
         SwitchDelegate {
             Layout.preferredWidth: parent.width * 0.9
+            Layout.leftMargin: 60
             spacing: 20
-            anchors.left: parent.left
-            anchors.leftMargin: 60
 
             background: Rectangle {
                 anchors.fill: parent
@@ -25,7 +24,8 @@ MainPage {
             }
 
             contentItem: Text {
-                text: qsTr("Blind Spot Dectection")
+                text: qsTr("Blindspot Detection")
+                font.weight: Font.Bold
                 font.pixelSize: 20
                 color: "#FFFFFF"
             }
@@ -34,32 +34,39 @@ MainPage {
                 checked: true
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: parent.right
-                anchors.rightMargin: 0
             }
         }
 
         Image {
             Layout.preferredWidth: parent.width
-            Layout.alignment: Qt.AlignLeft
             source: "../assets/icons/HorizontalSeparator.png"
         }
 
         ColumnLayout {
-            Layout.preferredWidth: parent.width * 0.75
+            Layout.preferredWidth: parent.width * 0.9
+            Layout.alignment: Qt.AlignHCenter
             spacing: 20
+
             Text {
-                Layout.alignment: Qt.AlignVCenter
                 text: qsTr("Displays Blind Spot views in the Cluster when changing lanes and using the turn signal")
                 font.pixelSize: 14
                 color: "#FFFFFF"
+                wrapMode: Text.WordWrap
+                Layout.alignment: Qt.AlignHCenter
             }
 
             Image {
-                Layout.preferredWidth: parent.width
-                Layout.alignment: Qt.AlignVCenter
-                source: "../"
+                Layout.preferredWidth: 440
+                Layout.preferredHeight: 260
+                anchors.horizontalCenter: parent.horizontalCenter
+                opacity: 0.5
+                source: "../assets/icons/blindSpotbk.png"
+                fillMode: Image.PreserveAspectFit
             }
         }
     }
 
+    Component.onCompleted: {
+        console.log("Blindspot detection component loaded")
+    }
 }

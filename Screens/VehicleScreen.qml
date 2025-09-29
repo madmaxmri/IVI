@@ -34,9 +34,6 @@ Item {
             Layout.columnSpan: 1
             Layout.rowSpan: 1
 
-            CameraView {}
-
-            FeatureButton {}
         }
 
         ColumnLayout {
