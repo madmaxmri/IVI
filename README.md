@@ -18,3 +18,10 @@
  Call Screen
 <img width="1365" height="766" alt="settings" src="https://github.com/user-attachments/assets/be40f2f0-77db-4182-8e66-376ef56c8e2d" />
  Settings Screen
+
+## ⚙️ Installation
+
+Clone the repository:
+```
+bash
+git clone https://github.com/yourusername/NumberPlateDetectionModel.git
